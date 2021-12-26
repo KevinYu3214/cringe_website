@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CringeWeBsIte </title>
+
+	<!--"Royalty Free Music from Bensound"-->
+<style>
+	body {
+ 		background: linear-gradient(-125deg, #5fa41c, #4d442e
+, #ffa3c6);
+		text-align: center-left;
+		background-size: 25% 50%;
+		animation: gradient 2s ease infinite;
+		height: 100vh;
+	}
+
+	#zoomOut:hover {
+		zoom: 1.5;
+		
+	}
+	#zoomOut {
+		 position: relative;
+	  animation-name: backgroundPosition;
+	  animation-duration: 12s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+	background-image: url("Fortnite7ep.jpg");
+   }
+@keyframes backgroundPosition {
+  0%   {left:0px; top:0px;}
+  25%  {left:10%; top:0px;}
+  50%  {left:10%; top:50%;}
+  75%  {left:0px; top:50%;}
+  95% {left:0px; top:0px;}
+  100%   {left:0px; top:0px;}
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+			25% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+		75% {
+		background-position: 100% 24%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.bouncy{
+	animation:bouncy 3s infinite linear;
+	position:relative;
+}
+@keyframes bouncy {
+	0%{top:0em transform: scale(1,2)}
+	40%{top:0em transform: scale(2,1)}
+	43%{top:-0.9em}
+	46%{top:0em}
+	48%{top:-0.4em}
+	50%{top:0em}
+	100%{top:0em;}
+}
+.fourButtonsStyle {
+  background-color: #d6c601;
+  color: black;
+  border: 5px solid #7d7a00
+}
+.videoContainer{
+	width:100%;
+	margin: auto;
+}
+gradientText {
+  background: -webkit-linear-gradient(#db600e, #603631);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.merchImages {
+	box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  opacity: 0.5; 
+  cursor: pointer; 
+  border: 1px solid #db600e;
+  border-radius: 75%;
+}
+.column img:hover {
+	opacity: 1;
+	box-shadow: 0 0 4px 1px rgba(120, 120, 50, 0.5);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  color: white;
+  font-size: 100px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.closebtn {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+	<script>
+	// https://cssgradient.io/blog/css-gradient-text/ for gradient text
+		// var videoContainer = document.getElementById('zoomOut'),
+		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_img_gallery for image gallery
+	let videoContainer = document.querySelector('.zoomOut');
+	const ayayaSound = new Audio("ayayaSoundSample.mp3");
+	const dubstepSound = new Audio("dubstep.mp3");
+
+	function playAyayaAudio(){
+		ayayaSound.volume = Math.random();
+	  ayayaSound.play();
+	}
+	
+	function myFunction(imgs) {
+	dubstepSound.play();
+
+	  var expandImg = document.getElementById("expandedImg");
+	  var imgText = document.getElementById("imgtext");
+	  expandImg.src = imgs.src;
+	  imgText.innerHTML = imgs.alt;
+	  expandImg.parentElement.style.display = "block";
+	}
+	</script>
+</head>
+
+
+
+
+
+
+<body>
+
+<marquee scrollamount="50" style="font-size:200px;">Uh </mark> Oh....<mark>video audio NOT workiNG?</mark>Press on the button below</marquee>
+
+<div style="cursor: pointer;" onclick="playAyayaAudio()" class = "videoContainer" id="zoomOut">
+	<iframe src="https://www.youtube.com/embed/nOjN66mYgQk?start=1&end=33&autoplay=1&mute=1&theme=light&controls=0&loop=1" width="400" height="315" allow="autoplay"  frameborder="0"></iframe>
+</div>
+<a href="https://among-us.fandom.com/wiki/Among_Us_Wiki" class="fourButtonsStyle bouncy">Wait</a>
+<a onclick="playAyayaAudio()" class="fourButtonsStyle bouncy" style="animation-delay:0.05s">which</a>
+<a href="whatEvenIsThis.jpg" class="fourButtonsStyle bouncy" style="animation-delay:0.10s">button</a>
+<a href="#store" class="fourButtonsStyle bouncy" style="animation-delay:0.15s">??? (HINT ITS <gradientText>DEIFNITELY</gradientText> THIS ONE)</a>
+<h1 style="margin-top:1000cm"/>
+<section id="store" style="margin-top:1000cm"><h1>Buy our merch!<h1/></section>
+<div class="row">
+  <div class="column">
+    <img src="daDog.jpg" alt="Da Dog© 2021 Poggers, Inc." style="width:50%; margin-bottom:10px" onclick="myFunction(this);">
+	<img src="daLootShirt.jpg" alt="Da Shirt©" style="width:50%; margin-bottom:10px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="daSanta.jpg" alt="Da Santa© Poggers, Inc." style="width:50%; margin-bottom:10px" onclick="myFunction(this);">
+	<img src="daMonke.jpg" alt="Da Monke© Poggers, Inc." style="width:50%; margin-bottom:10px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="daRug.jpg" alt="Da Loot Shirt©" style="width:50%; margin-bottom:10px" onclick="myFunction(this);">
+	<img src="daFrog.jpg" alt="Da Frog© Poggers, Inc." style="width:50%; margin-bottom:10px" onclick="myFunction(this);">
+
+  </div>
+ </div>
+ 
+ <div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</body>
+
+
+
+</html>
